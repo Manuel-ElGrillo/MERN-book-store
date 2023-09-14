@@ -11,15 +11,15 @@ dotenv.config()
 
 //Option 1 using cors
 //Allows all origins with Default
-// app.use(cors())
+app.use(cors())
 
 //Option 2 using cors
 //Allows custom origins
-app.use(cors({
-    origin: 'http://localhost:3000',
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-type']
-}))
+// app.use(cors({
+//     origin: 'http://localhost:3000',
+//     methods: ['GET', 'POST', 'PUT', 'DELETE'],
+//     allowedHeaders: ['Content-type']
+// }))
 
 app.use(express.json())
 
