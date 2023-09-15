@@ -8,6 +8,7 @@ import { useState } from 'react';
 import BookModal from './BookModal';
 
 const BookSingleCard = ({ book }) => {
+  
   const [showModal, setShowModal] = useState(false);
 
   return (
